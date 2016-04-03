@@ -15,3 +15,8 @@ environment:
 build_script:
   - cmake "-G%GENERATOR%" -H. -B_builds
   - cmake --build _builds --config "%CONFIG%"
+
+notifications:
+- provider: Slack
+  incoming_webhook:
+    secure: KEIQZ3KfRJcrbUyuRCd4BDSCPUt/ReKLlFKmeB8rec4T2RCgdestpWymxpQca+ZJ48FWZcjSg+usEdK7iqgqgHoC8eYnJpoeLpqePK1+uHY=
