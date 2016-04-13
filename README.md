@@ -1,1 +1,3 @@
 # HelloAppveyor
+
+Build with cmake
